@@ -1,7 +1,6 @@
 import { CartItem, Coupon, Product } from "../../types";
 import { getMaxApplicableDiscount } from "./discount";
 
-
 // 개별 아이템의 할인 적용 후 총액 계산
 export const calculateItemTotal = (item: CartItem, cart: CartItem[]): number => {
     const { price } = item.product;
