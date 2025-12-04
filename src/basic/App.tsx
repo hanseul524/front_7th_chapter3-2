@@ -47,6 +47,7 @@ const App = () => {
         ) : (
           <CartPage
             cartHook={cartHook}
+            productHook={productsHook}
             couponsHook={couponsHook}
             searchHook={searchHook}
           />
