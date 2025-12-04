@@ -43,6 +43,7 @@ const App = () => {
           <AdminPage
             productsHook={productsHook}
             couponsHook={couponsHook}
+            addNotification={addNotification}
           />
         ) : (
           <CartPage
