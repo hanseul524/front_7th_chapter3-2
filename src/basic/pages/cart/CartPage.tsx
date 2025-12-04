@@ -23,7 +23,6 @@ export function CartPage({
 
   const { cart } = cartHook;
   const { products } = productHook;
-  const { coupons } = couponsHook;
   const { filteredProducts, debouncedSearchTerm } = searchHook;
 
   return (
@@ -47,6 +46,7 @@ export function CartPage({
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
               {filteredProducts.map((product) =>
                 <CartItem
+                  key={product.id}
                   product={product}
                   cartHook={cartHook}
                   />

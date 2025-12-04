@@ -18,7 +18,6 @@ export function CartItem({
 
   return (
     <div
-      key={product.id}
       className="bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-lg transition-shadow"
     >
       {/* 상품 이미지 영역 (placeholder) */}

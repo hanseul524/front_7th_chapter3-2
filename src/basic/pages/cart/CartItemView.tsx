@@ -58,7 +58,9 @@ export function CartItemView({
                           updateQuantity(products, item.product.id, item.quantity - 1)
                         }
                         className="w-6 h-6 rounded border border-gray-300 flex items-center justify-center hover:bg-gray-100"
+                        aria-label="수량 감소"
                       >
+                        <span className="sr-only">−</span>
                         <MinusIcon size={12} />
                       </button>
                       <span className="mx-3 text-sm font-medium w-8 text-center">
@@ -69,7 +71,9 @@ export function CartItemView({
                           updateQuantity(products, item.product.id, item.quantity + 1)
                         }
                         className="w-6 h-6 rounded border border-gray-300 flex items-center justify-center hover:bg-gray-100"
+                        aria-label="수량 증가"
                       >
+                        <span className="sr-only">+</span>
                         <PlusIcon size={12} />
                       </button>
                     </div>
